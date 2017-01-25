@@ -13,3 +13,24 @@ Flash all escs to last version (16.6 at writing time)
 Change motor direction for motors tested with wrong direction.
 
 ## ESC calibration
+
+http://blog-rc.tidom.net/calibrer-esc-betaflight-cleanflight/
+
+Open betaflight configurator and connect it to your board
+esc protocol : multishot
+min_command = 1000
+max_throttle = 2000
+Save, reboot, check configuratin
+Go to motors tab
+set motors to 2000
+Branch lipo
+Wait end of music
+set motors to 1000
+Wait end of music
+unbranch lipo
+
+Run blheli configurator
+Check PM Min Throttle et PPM Max Throttle. Ces deux valeurs ne doivent PAS être égale à respectivement 1000 et/ou 2020. 
+
+Run betaflight configurator to set 
+min throttle = max(minmotor 1, minmotor2, minmotor3, minmotor4) +15
