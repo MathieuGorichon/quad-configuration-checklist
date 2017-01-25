@@ -35,3 +35,17 @@ Check PM Min Throttle et PPM Max Throttle. Ces deux valeurs ne doivent PAS être
 Run betaflight configurator to set 
 min throttle = max(minmotor 1, minmotor2, minmotor3, minmotor4) +15
 max throttle = min(max motor1...
+
+motor stop
+
+ports
+
+telemetry
+
+air_mode
+
+configuration battery scale
+
+
+## Receiver
+
