@@ -2,6 +2,16 @@
 
 ## Flash betaflight last version
 
+## Connect to betaflight configurator
+
+If DFU when connected : 
+
+  $ systemctl stop ModemManager.service
+
+## Check orientation
+
+Betaflight configurator, "configuration" tab, "Board and Sensor Alignment" section
+
 ## Motors direction
 
 Connect a battery, and with the help of motors tab in betaflight, check motors directions.
