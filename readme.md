@@ -6,11 +6,11 @@
 
 If DFU when connected : 
 
-  $ systemctl stop ModemManager.service
+    $ systemctl stop ModemManager.service
 
 ## Check orientation
 
-Betaflight configurator, "configuration" tab, "Board and Sensor Alignment" section
+Betaflight configurator, "configuration" tab, "Board and Sensor Alignment" section. Normally, you justt have to change yaw field.
 
 ## Motors direction
 
