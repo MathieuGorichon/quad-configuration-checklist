@@ -10,8 +10,8 @@ If DFU when connected :
 
 ## Setup ports
 
-USB VCP : MSP 115200
-UART 1 : Seria RX
+    USB VCP : MSP 115200
+    UART 1 : Seria RX
 
 ## Check orientation
 
