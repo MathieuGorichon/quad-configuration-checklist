@@ -79,6 +79,9 @@ Run betaflight configurator to set
 min throttle = max(minmotor 1, minmotor2, minmotor3, minmotor4) +15
 max throttle = min(max motor1...
 
+=====================>>>>>>>>
+
+
 motor stop
 
 ports
