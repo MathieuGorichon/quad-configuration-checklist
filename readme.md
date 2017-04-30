@@ -17,6 +17,31 @@ If DFU when connected :
 
 Betaflight configurator, "configuration" tab, "Board and Sensor Alignment" section. Normally, you justt have to change yaw field.
 
+## Configuration
+
+Betaflight configurator, "Configuration" tab
+
+Receiver section : 
+    Serial-base receiver
+    SBUS
+
+RSSI (Signal Strenght) section :
+    RSSI_ADC : Off ????
+
+System Configuration section :
+    Gyro update frequency : 8 KHZ
+    PID loop frequency : 8 KHZ
+    Accelerometer : ON (for motors vibrations measurement)
+    
+ Other Features Section
+     Airmode ON
+     All others OFF
+     
+ ESC/Motor Features Section :
+    Multishot
+    
+
+
 ## Motors direction
 
 Connect a battery, and with the help of motors tab in betaflight, check motors directions.
