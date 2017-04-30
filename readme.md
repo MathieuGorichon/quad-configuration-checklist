@@ -8,6 +8,11 @@ If DFU when connected :
 
     $ systemctl stop ModemManager.service
 
+## Setup ports
+
+USB VCP : MSP 115200
+UART 1 : Seria RX
+
 ## Check orientation
 
 Betaflight configurator, "configuration" tab, "Board and Sensor Alignment" section. Normally, you justt have to change yaw field.
