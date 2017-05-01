@@ -81,14 +81,14 @@ max throttle = min(max motor1...
 
 =====================>>>>>>>>
 
+## Create a new model on the transmitter
+## Link receiver
 
-motor stop
+Red LED on RX means it’s not bound or not detecting TX. To bind, enter Bind mode on TX, hold down F/S button on RX and power on. After a few seconds, Green LED will light up indicates binding has completed.
 
-ports
+To setup up failsafe, power on both TX and RX. Set your TX channels to desire positions, and press the F/S button on the RX. The green LED should flashes and indicates F/S has been setup. Please confirm if F/S is now working as expected by turning off TX. To remove F/S, simply rebind the RX.
 
-telemetry
-
-air_mode
+## Modes
 
 configuration battery scale
 
