@@ -54,6 +54,9 @@ Change motor direction for motors tested with wrong direction.
 
 Recheck motors direction
 
+Set beacon delay to 2 minutes
+Set beep strength to 2
+
 ## ESC calibration
 
 http://blog-rc.tidom.net/calibrer-esc-betaflight-cleanflight/
