@@ -98,3 +98,7 @@ configuration battery scale
 
 ## Receiver
 
+## Anti-gravity
+
+## notch filters
+
