@@ -1,3 +1,5 @@
+To review using joshua's video : https://www.youtube.com/watch?v=JkggzZySIqs
+
 # Betaflight Configuration Checklist
 
 1. Flash betaflight last version
