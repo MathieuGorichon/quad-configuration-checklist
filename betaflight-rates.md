@@ -13,3 +13,5 @@ Stingy : https://www.youtube.com/watch?v=ehyXLsvaEhw&t=69s
 |Roll  |0.82    |0.87       |1262     |0.35    |
 |Pitch |0.82    |0.87       |1262     |0.35    |
 |Yaw   |0.82    |0.87       |1262     |0.35    |
+
+Bardwell : https://youtu.be/JkggzZySIqs?t=21m45s
