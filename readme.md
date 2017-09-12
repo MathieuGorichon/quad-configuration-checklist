@@ -2,7 +2,21 @@ To review using joshua's video : https://www.youtube.com/watch?v=JkggzZySIqs
 
 # Betaflight Configuration Checklist
 
-1. Flash betaflight last version
+## Flash betaflight last version
+
+Before installation : 
+
+- To get the target, use following command in CLI
+
+    version
+
+- To dump current configuration, use following command in CLI and save result in a text file
+
+    diff
+    
+- To switch in DFU mode, use following command in CLI. Then you could install betaflight
+
+    dfu
 
 1. Connect to betaflight configurator
 
