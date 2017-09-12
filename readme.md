@@ -18,22 +18,22 @@ Before installation :
 
     dfu
 
-1. Connect to betaflight configurator
+## Connect to betaflight configurator
 
 If DFU when connected : 
 
     $ systemctl stop ModemManager.service
 
-1. Setup ports
+## Setup ports
 
     USB VCP : MSP 115200
     UART 1 : Seria RX
 
-1. Check orientation
+## Check orientation
 
 Betaflight configurator, "configuration" tab, "Board and Sensor Alignment" section. Normally, you justt have to change yaw field.
 
-1. Configuration Tab
+## Configuration Tab
 
 Betaflight configurator, "Configuration" tab
 
@@ -58,11 +58,11 @@ System Configuration section :
     
 
 
-1. Motors direction
+## Motors direction
 
 Connect a battery, and with the help of motors tab in betaflight, check motors directions.
 
-1. flash and configure ESC
+## flash and configure ESC
 
 Run blheli configurator
 Flash all escs to last version (16.6 at writing time)
@@ -73,7 +73,7 @@ Recheck motors direction
 Set beacon delay to 2 minutes
 Set beep strength to 2
 
-1. ESC calibration
+## ESC calibration
 
 http://blog-rc.tidom.net/calibrer-esc-betaflight-cleanflight/
 
@@ -100,18 +100,18 @@ max throttle = min(max motor1...
 
 =====================>>>>>>>>
 
-1. Create a new model on the transmitter
-1. Link receiver
+## Create a new model on the transmitter
+## Link receiver
 
 Red LED on RX means it’s not bound or not detecting TX. To bind, enter Bind mode on TX, hold down F/S button on RX and power on. After a few seconds, Green LED will light up indicates binding has completed.
 
 To setup up failsafe, power on both TX and RX. Set your TX channels to desire positions, and press the F/S button on the RX. The green LED should flashes and indicates F/S has been setup. Please confirm if F/S is now working as expected by turning off TX. To remove F/S, simply rebind the RX.
 
-1. Modes
+## Modes
 
-1. configuration battery scale
+## configuration battery scale
 
-1. Anti-gravity
+## Anti-gravity
 
-1. notch filters
+## notch filters
 
