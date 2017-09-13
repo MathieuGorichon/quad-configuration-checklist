@@ -23,42 +23,8 @@ Before installation :
 If DFU when connected : 
 
     $ systemctl stop ModemManager.service
-
-## Setup ports
-
-    USB VCP : MSP 115200
-    UART 1 : Seria RX
-
-## Check orientation
-
-Betaflight configurator, "configuration" tab, "Board and Sensor Alignment" section. Normally, you justt have to change yaw field.
-
-## Configuration Tab
-
-Betaflight configurator, "Configuration" tab
-
-Receiver section : 
-    Serial-base receiver
-    SBUS
-
-RSSI (Signal Strenght) section :
-    RSSI_ADC : Off ????
-
-System Configuration section :
-    Gyro update frequency : 8 KHZ
-    PID loop frequency : 8 KHZ
-    Accelerometer : ON (for motors vibrations measurement)
     
- Other Features Section
-     Airmode ON
-     All others OFF
-     
- ESC/Motor Features Section :
-    Multishot
-    
-
-
-## Motors direction
+## Motors ordering and direction
 
 Connect a battery, and with the help of motors tab in betaflight, check motors directions.
 
@@ -73,6 +39,88 @@ Recheck motors direction
 Set beacon delay to 2 minutes
 Set beep strength to 2
 
+## Check orientation
+
+Betaflight configurator, "configuration" tab, "Board and Sensor Alignment" section. Normally, you justt have to change yaw field.
+
+## Setup ports
+
+    USB VCP : MSP 115200
+    UART 1 : Seria RX
+
+## Configuration Tab
+
+Betaflight configurator, "Configuration" tab
+
+System Configuration section :
+    Gyro update frequency : 8 KHZ
+    PID loop frequency : 8 KHZ
+    Accelerometer : ON (for motors vibrations measurement and for crash recovery feature (bflight >= 3.2))
+
+Receiver section : 
+    Serial-base receiver
+    SBUS
+
+RSSI (Signal Strength) section :
+    RSSI_ADC : Off ????
+
+Features Section
+     Airmode ON
+     OSD ON (depends on fc, omnibus yes, Lux no, RevoF4 no)
+     Antigravity ON
+     Dynamic filter ON (betaflight >= 3.2)
+     
+ESC/Motor Features Section :
+    Dshot for racerstar
+    Multishot for lux and DYS XM20A
+
+## Receiver tab
+
+- Create a new model on the transmitter
+- Link receiver
+
+    Red LED on RX means it’s not bound or not detecting TX. To bind, enter Bind mode on TX, hold down F/S button on RX and power on. After a few seconds, Green LED will light up indicates binding has completed.
+
+    To setup up failsafe, power on both TX and RX. Set your TX channels to desire positions, and press the F/S button on the RX. The green LED should flashes and indicates F/S has been setup. Please confirm if F/S is now working as expected by turning off TX. To remove F/S, simply rebind the RX.
+
+
+Turn on receiver
+ - check channels are ok (4 + arm button)
+ - check channels are centered @1500
+ - check channel endpoints (1000 and 2000)
+ 
+ Set stickmin to 1010 (above throttle point)
+ 
+ Set stickmax to 1090
+
+## Modes
+
+Set ARM_MODE
+Set Beeper ?
+Set PREARM for 2 stages arming)
+
+## Failsafe
+
+Remove props, arm the quad, raise throttle a bit and turn off transmitter
+
+## OSD
+
+Configure osd, use previous dump if needed.
+
+
+## configuration battery scale
+
+??
+
+## Anti-gravity
+
+??
+
+## notch filters
+
+??
+
+To set in an other page
 ## ESC calibration
 
 http://blog-rc.tidom.net/calibrer-esc-betaflight-cleanflight/
@@ -99,19 +147,4 @@ min throttle = max(minmotor 1, minmotor2, minmotor3, minmotor4) +15
 max throttle = min(max motor1...
 
 =====================>>>>>>>>
-
-## Create a new model on the transmitter
-## Link receiver
-
-Red LED on RX means it’s not bound or not detecting TX. To bind, enter Bind mode on TX, hold down F/S button on RX and power on. After a few seconds, Green LED will light up indicates binding has completed.
-
-To setup up failsafe, power on both TX and RX. Set your TX channels to desire positions, and press the F/S button on the RX. The green LED should flashes and indicates F/S has been setup. Please confirm if F/S is now working as expected by turning off TX. To remove F/S, simply rebind the RX.
-
-## Modes
-
-## configuration battery scale
-
-## Anti-gravity
-
-## notch filters
 
