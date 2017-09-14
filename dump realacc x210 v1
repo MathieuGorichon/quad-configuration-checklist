@@ -1,0 +1,76 @@
+# diff
+
+# version
+# Betaflight / AIRBOTF4 3.1.6 Feb 21 2017 / 14:10:50 (1fd502c)
+
+# name
+
+# resources
+
+# mixer
+
+# servo
+
+# servo mix
+
+
+# feature
+feature -BLACKBOX
+feature AIRMODE
+
+# beeper
+
+# map
+
+# serial
+serial 0 64 115200 57600 0 115200
+
+# led
+
+# color
+
+# mode_color
+
+# aux
+aux 0 0 0 900 1300
+
+# adjrange
+
+# rxrange
+
+# rxfail
+
+# master
+set min_throttle = 1039
+set motor_pwm_protocol = MULTISHOT
+set serialrx_provider = SBUS
+set align_board_yaw = 90
+set gyro_notch1_hz = 0
+set gyro_notch2_hz = 0
+set pid_process_denom = 1
+
+# profile
+profile 1
+
+set p_pitch = 49
+set i_pitch = 21
+set d_pitch = 35
+set p_roll = 42
+set i_roll = 21
+set d_roll = 35
+set p_yaw = 90
+set i_yaw = 36
+rateprofile 0
+
+# rateprofile
+rateprofile 0
+
+set rc_rate = 82
+set rc_rate_yaw = 82
+set rc_expo = 35
+set rc_yaw_expo = 35
+set roll_srate = 87
+set pitch_srate = 87
+set yaw_srate = 87
+
+# 
