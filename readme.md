@@ -107,6 +107,12 @@ Remove props, arm the quad, raise throttle a bit and turn off transmitter
 
 Configure osd, use previous dump if needed.
 
+## ESC Beeper
+
+Requirements : 
+ - Dshot
+ - BLHeli 32 or BLHeli_S with version 16_67 
+ - Betaflight 3.2 RC5
 
 ## configuration battery scale
 
