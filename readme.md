@@ -120,7 +120,15 @@ Configure osd, use previous dump if needed.
 
 ??
 
-To set in an other page
+## Arming issue 
+https://www.youtube.com/watch?v=3LL2caB3r88 first comment 
+A FEW IMPORTANT NOTES:
+
+1. You need to go to the CLI and type "set small_angle=180" to make turtle mode work. I do this on all my quads as part of my default setup so I didn't notice it was necessary. This will allow your quad to arm at any angle (even if you are carrying it in your hands) so be careful. I believe that turtle mode should override small_angle and I think this will be changed before the final release.
+
+2. If you aren't using nylock nuts, you are more likely to unscrew a prop when using turtle mode.﻿
+
+
 ## ESC calibration
 
 http://blog-rc.tidom.net/calibrer-esc-betaflight-cleanflight/
