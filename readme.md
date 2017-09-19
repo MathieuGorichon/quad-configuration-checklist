@@ -2,7 +2,9 @@ To review using joshua's video : https://www.youtube.com/watch?v=JkggzZySIqs
 
 # Betaflight Configuration Checklist
 
-## Flash betaflight last version
+## Basics
+
+### Flash betaflight last version
 
 Before installation : 
 
@@ -18,17 +20,17 @@ Before installation :
 
     dfu
 
-## Connect to betaflight configurator
+### Connect to betaflight configurator
 
 If DFU when connected : 
 
     $ systemctl stop ModemManager.service
     
-## Motors ordering and direction
+### Motors ordering and direction
 
 Connect a battery, and with the help of motors tab in betaflight, check motors directions.
 
-## flash and configure ESC
+### flash and configure ESC
 
 Run blheli configurator
 Flash all escs to last version (16.6 at writing time)
@@ -39,16 +41,16 @@ Recheck motors direction
 Set beacon delay to 2 minutes
 Set beep strength to 2
 
-## Check orientation
+### Check orientation
 
 Betaflight configurator, "configuration" tab, "Board and Sensor Alignment" section. Normally, you justt have to change yaw field.
 
-## Setup ports
+### Setup ports
 
     USB VCP : MSP 115200
     UART 1 : Seria RX
 
-## Configuration Tab
+### Configuration Tab
 
 Betaflight configurator, "Configuration" tab
 
@@ -72,9 +74,10 @@ Features Section
      
 ESC/Motor Features Section :
     Dshot for racerstar
+    Set Idle to x+30 / (2000 - 1000) /100  with x = minimum throttle to turn the motors
     Multishot for lux and DYS XM20A
 
-## Receiver tab
+### Receiver tab
 
 - Create a new model on the transmitter
 - Link receiver
@@ -93,21 +96,23 @@ Turn on receiver
  
  Set stickmax to 1090
 
-## Modes
+### Modes
 
 Set ARM_MODE
 Set Beeper ?
 Set PREARM for 2 stages arming)
 
-## Failsafe
+### Failsafe
 
 Remove props, arm the quad, raise throttle a bit and turn off transmitter
 
-## OSD
+### OSD
 
 Configure osd, use previous dump if needed.
 
-## ESC Beeper
+## Advanced
+
+### ESC Beeper
 
 Requirements : 
  - Dshot
@@ -120,11 +125,18 @@ Requirements :
 
 ## Anti-gravity
 
-??
+set anti-gravity gain to 3.0
 
 ## notch filters
 
-??
+- Activate dynamic notch filter feature
+- Test motor temperature
+- disable first notch filter
+- Test motor temperature
+- disable second notch filter
+- Test motor temperature
+- disable third notch filter
+- Test motor temperature
 
 ## Arming issue 
 https://www.youtube.com/watch?v=3LL2caB3r88 first comment 
