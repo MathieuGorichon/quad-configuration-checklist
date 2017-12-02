@@ -1,0 +1,74 @@
+ version
+# Betaflight / OMNIBUSF4 3.1.7 Apr  3 2017 / 22:14:59 (e1c4b5c)
+
+# diff
+
+# version
+# Betaflight / OMNIBUSF4 3.1.7 Apr  3 2017 / 22:14:59 (e1c4b5c)
+
+# name
+
+# resources
+resource MOTOR 3 A02
+resource MOTOR 4 A03
+
+# mixer
+
+# servo
+
+# servo mix
+
+
+# feature
+feature AIRMODE
+
+# beeper
+
+# map
+
+# serial
+serial 0 64 115200 57600 0 115200
+
+# led
+
+# color
+
+# mode_color
+
+# aux
+aux 0 0 0 900 1300
+
+# adjrange
+
+# rxrange
+
+# rxfail
+
+# master
+set digital_idle_percent =  4.000
+set motor_pwm_protocol = DSHOT600
+set serialrx_provider = SBUS
+set align_board_yaw = 180
+set pid_process_denom = 1
+set osd_units = METRIC
+set osd_vbat_pos = 2497
+set osd_flytimer_pos = 2519
+set osd_ontimer_pos = 374
+set osd_flymode_pos = 364
+set osd_horizon_pos = 200
+
+# profile
+profile 1
+
+set d_pitch = 40
+set d_roll = 35
+rateprofile 0
+
+# rateprofile
+rateprofile 0
+
+set rc_rate = 82
+set rc_rate_yaw = 82
+set roll_srate = 81
+set pitch_srate = 81
+set yaw_srate = 81
